@@ -8,12 +8,12 @@
 
 cast.receiver.logger.setLevelValue(0);
 var receiver = new cast.receiver.Receiver(
-    '25953f43-4105-4ea2-8813-7e5163aed7d6_1', [cast.receiver.RemoteMedia.NAMESPACE],
+    '25953f43-4105-4ea2-8813-7e5163aed7d6_1', ["com.singadi.demo"],
     "",
     5);
 var remoteMedia = new cast.receiver.RemoteMedia();
 remoteMedia.addChannelFactory(
-    receiver.createChannelFactory(cast.receiver.RemoteMedia.NAMESPACE));
+    receiver.createChannelFactory('com.singadi.demo');
 
 receiver.start();
 
