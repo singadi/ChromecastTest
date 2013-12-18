@@ -39,7 +39,7 @@ if (window.cast && window.cast.isAvailable) {
 
 initializeCastApi = function() {
   castApi = new cast.Api();
-  castApi.addReceiverListener(applicationID, onReceiverList);
+  castApi.addReceiverListener("YouTube", onReceiverList);
 };
 
 function onReceiverList(list) {
